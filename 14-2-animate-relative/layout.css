@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #39C;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+}
+#alex {
+	position: absolute;
+}
+img {
+	cursor: pointer;
+}

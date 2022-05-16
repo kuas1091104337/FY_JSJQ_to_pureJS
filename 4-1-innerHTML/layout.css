@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	text-align:center;
+	background-color:#F5F5F5;
+	margin-top:20px;
+}
+
+.icon{
+	padding:20px;
+}
+
+#title,#content{
+	width:500px;
+	margin:0 auto;
+	margin-bottom:20px;
+}

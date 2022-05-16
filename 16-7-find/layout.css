@@ -1,0 +1,73 @@
+/* CSS Document */
+
+/* =============================================================================== */
+#MAINMAIN{width:980px; margin:0 auto; background-image:url(images/bgbg.gif);position:relative;}
+
+
+#MAINMAIN #ICON{ float:left; width:130px; position:absolute;}
+
+#MAINMAIN #CONTENT{ float:right; width:850px;}
+
+#MAINMAIN #ICON li { width:100px; margin:0 auto;}
+
+#MAINMAIN #ICON li a{ display:block; width:80px; height:70px; background-repeat:no-repeat; text-indent:-9999px; }
+
+#MAINMAIN #ICON li a:hover{ background-position:10px top;}
+
+#MAINMAIN #ICON li.PS a{ background-image:url(images/ps.jpg);}
+#MAINMAIN #ICON li.AI a{ background-image:url(images/ai.jpg);}
+#MAINMAIN #ICON li.FL a{ background-image:url(images/fl.jpg);}
+#MAINMAIN #ICON li.DW a{ background-image:url(images/dw.jpg);}
+#MAINMAIN #ICON li.CSS a{ background-image:url(images/css.jpg);}
+#MAINMAIN #ICON li.JS a{ background-image:url(images/js.jpg);}
+
+#MAINMAIN #CONTENT .COURSE{ width:830px; margin:0 auto; clear:both; margin-bottom:10px;}
+#MAINMAIN #CONTENT .COURSE h3 a{ display:block; width:830px; height:40px; font-size:15px; text-indent:45px; color:#FFF; font-family:Arial, Helvetica, sans-serif; letter-spacing:2px; line-height:40px; clear:both; text-decoration:none; }
+#MAINMAIN #CONTENT .COURSE h3 a:hover{ color:#9FF;}
+
+#MAINMAIN #CONTENT .COURSE h3.PS a{background-image:url(images/ps_title.jpg);}
+#MAINMAIN #CONTENT .COURSE h3.AI a{background-image:url(images/ai_title.jpg);}
+#MAINMAIN #CONTENT .COURSE h3.FL a{background-image:url(images/fl_title.jpg);}
+#MAINMAIN #CONTENT .COURSE h3.DW a{background-image:url(images/dw_title.jpg);}
+#MAINMAIN #CONTENT .COURSE h3.CSS a{background-image:url(images/css_title.jpg);}
+#MAINMAIN #CONTENT .COURSE h3.JS a{background-image:url(images/js_title.jpg);}
+
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX{ width:830px; background-image:url(images/course_box.gif);background-position:left bottom; padding-bottom:12px; overflow:hidden; display:block;}
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX h4{ width:830px; height:15px; background-image:url(images/course_box.gif); line-height:15px; font-size:12px; text-indent:-9999px;}
+
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX ul{ width:800px; margin:0 auto; overflow:hidden;}
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX li{ float:left;}
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX ul.SECOND{ margin-top:8px; padding-top:5px; border-top:1px solid #F5F5F5;}
+
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX li.DATE { display:block; width:265px; height:25px; line-height:25px;  background-image:url(images/01.gif); font-size:13px; text-indent:110px; letter-spacing:2px; }
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX li.TIME { display:block; width:390px; height:25px; line-height:25px;  background-image:url(images/02.gif); font-size:13px; text-indent:58px; letter-spacing:2px; }
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX li.MORE a{ display:block; width:105px; height:25px; line-height:25px;  background-image:url(images/more.gif); font-size:13px; text-indent:20px; letter-spacing:2px; text-decoration:none; }
+#MAINMAIN #CONTENT .COURSE .COURSE_BOX li.MORE a:hover{ background-position:left bottom; color:#F00;}
+
+/* =============================================================================== */
+#FOOTFOOT{ clear:both;width:980px; margin:0 auto; background-image:url(images/bgbg.gif);}
+#FOOTFOOT h2{text-indent:-9999px;}
+#FOOTFOOT h2 a{ display:block; width:980px; height:41px; background-image:url(images/foot.gif);}
+#FOOTFOOT p{ color:#006699; font-size:11px; letter-spacing:2px;}
+#FOOTFOOT a{ color:#006699; font-size:11px; letter-spacing:2px;}
+#FOOTFOOT a:hover{ color:#FF0000;}
+/* =============================================================================== */
+p{ padding-top:5px; padding-bottom:5px;}
+
+#my_blockTitle{ width:98%; margin:0 auto; background-image:url(images/my_blockTitle.gif); text-indent:30px;}
+#my_blockTitle span{ display:block; background-image:url(images/my_blockTitle_r.gif); background-position:right; background-repeat:no-repeat; line-height:22px;}
+
+#LEFTLEFT { margin-left:10px;}
+#LEFTLEFT table{ width:250px;}
+
+#LEFTLEFT table.MM td{border:1px solid #CCCCCC; padding:2px; vertical-align:middle;}
+
+/* =============================================================================== */
+
+
+br.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}

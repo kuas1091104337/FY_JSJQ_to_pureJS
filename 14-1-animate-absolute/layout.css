@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+body {
+	background-color: #39C;
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+}
+#alex {
+	position: absolute;
+	transition:all 1s;
+	/*transform: rotate(0deg);*/
+}
+img {
+	cursor: pointer;
+}

@@ -1,0 +1,107 @@
+@import url("reset.css");
+
+body{
+	background-color:#427d15;
+	background-image:url(images/background.jpg);
+	background-repeat:no-repeat;
+}
+
+#WRAPPER{
+	width:1000px;
+	height:800px;
+	margin:0 auto;
+	position:relative;
+}
+
+#OPEN{
+	width:1000px;
+	height:800px;
+	position:absolute;
+	display:none;
+}
+	
+#OPEN h2{
+	width:478px;
+	height:190px;
+	background-image:url(images/Flycan_Logo.png);
+	text-indent:-9999px;
+	position:absolute;
+	left:280px;
+	top:300px;
+}
+
+#CONTENT{width:1000px;
+	height:800px;
+	position:absolute;
+}
+
+#CONTENT #TOP h2{
+	width:300px;
+	height:60px;
+	background-image:url(images/Flycan_Logo_2.png);
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	left:52px;
+	top:80px;
+	display:none;
+}
+	
+#CONTENT #TOP ul{
+	position:absolute;
+	left:442px;
+	top:60px;
+	display:none;
+}
+
+#CONTENT #TOP li{ float:left;}
+
+#CONTENT #TOP li a{
+	display:block;
+	width:100px;
+	height:100px;
+	text-indent:-9999px;}
+
+#CONTENT #TOP li.AA a{background-image:url(images/fd_1.png);}
+#CONTENT #TOP li.BB a{background-image:url(images/fd_2.png);}
+#CONTENT #TOP li.CC a{background-image:url(images/fd_3.png);}
+#CONTENT #TOP li.DD a{background-image:url(images/fd_4.png);}
+#CONTENT #TOP li.EE a{background-image:url(images/fd_5.png);}
+
+#CONTENT #BOX{
+	clear:both;
+	width:920px;
+	height:450px;
+	background-image:url(images/box.png);
+	position:absolute;
+	left:44px;
+	top:180px;
+	display:none;	
+	overflow:hidden;
+}
+#CONTENT #BOX p{
+	font-size:13px;
+	line-height:1.6;
+	letter-spacing:1px;
+	padding:110px 50px 0 250px;}
+
+#CONTENT #SMALLCAR{
+	width:150px;
+	height:94px;
+	background-image:url(images/smallcar.png);
+	position:absolute;
+	left:750px;
+	top:319px;
+	z-index:100;
+	display:none;
+}
+
+#CONTENT #CAR{
+	width:256px;
+	height:160px;
+	background-image:url(images/car.png);
+	position:absolute;
+	left:-50px;
+	top:460px;
+	display:none;
+}

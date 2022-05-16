@@ -1,0 +1,73 @@
+
+.AAA {
+	width: 670px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000;
+	line-height: 1.8;
+	padding: 10px 20px;
+	background-image: url(images/paper-001.jpg);
+	text-align: justify;
+	clear: both;
+}
+.BBB {
+	width: 670px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-family: "Times New Roman", Times, serif;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 1.8;
+	padding: 10px 20px;
+	background-image: url(images/paper-002.jpg);
+	clear: both;
+	text-align: justify;
+}
+.CCC {
+	width: 670px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-family: "Courier New", Courier, monospace;
+	color: #000;
+	font-weight: bold;
+	line-height: 1.8;
+	padding: 10px 20px;
+	background-image: url(images/paper-003.jpg);
+	clear: both;
+	text-align: justify;
+	clear: both;
+}
+ul {
+	list-style: none;
+	padding: 20px;
+	width: 650px;
+	height:30px;
+	margin: 0 auto;
+	overflow:hidden;
+	text-align:right;
+}
+li {
+	display:inline;
+	margin-right: 3px;
+}
+a {
+	display: inline-block;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #CCC;
+	color: #FFFFFF;
+	font-family: Arial, ²Ó©úÅé;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+	background-color: #608193;
+}
+a:hover {
+	color: #FF0;
+}
+p {
+	clear: both;
+}

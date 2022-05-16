@@ -1,0 +1,85 @@
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #666666;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#BOX {
+	width: 620px;
+	margin: 0 auto;
+	color: #FFF;
+}
+#BOX h1{
+	margin-bottom:15px;
+}
+#BOX p {
+	font-size: 15px;
+	line-height: 1.6;
+	margin-bottom:15px;
+}
+#BOX img {
+	border: 10px solid #FFF;
+	box-shadow: 1px 8px 8px #333;
+	margin-bottom:15px;
+}
+#BOX ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 330px;
+	margin: 0 auto;
+}
+#BOX li {
+	float: left;
+	margin-right: 10px;
+}
+
+#BOX li a span{
+	position:absolute;
+	top:0px;
+	left:5px;
+	display:block;
+	width: 40px;
+	height: 40px;
+	background-color:rgba(0,0,0,0.2);
+	border-radius:40px;
+}
+
+#BOX li a {
+	position:relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: 3px solid #DDD;
+	text-indent: -9999px;
+	outline: none;
+	border-radius:50px;
+	box-shadow: 1px 5px 5px #333;
+}
+
+#BOX li a:hover{
+	margin-top:3px;
+	box-shadow: 1px 2px 2px #333;
+}
+
+#BOX li.A a {
+	background-color:#F90;
+}
+#BOX li.B a {
+	background-color:#0F0;
+}
+#BOX li.C a {
+	background-color:#06C;
+}
+#BOX li.D a {
+	background-color:#F00;
+}
+#BOX li.E a {
+	background-color:#FF0;
+}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("reset.css");
+body {
+	background-image: url(images/body_bg.jpg);
+	background-repeat: repeat-x;
+}
+#SlideMenuLeft {
+	width: 200px;
+	height: 750px;
+	background-image: url(images/SlideMenu.gif);
+	background-position: left bottom;
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	z-index:5
+}
+
+#SlideMenuRight {
+	width: 200px;
+	height: 750px;
+	background-image: url(images/SlideMenuR.gif);
+	background-position: left bottom;
+	position: fixed;
+	top: 50px;
+	right: 0px;
+	z-index:5
+}
+
+.slideMenu .icons {
+	width:100px;
+	height: 600px;
+	margin: 0 auto;
+}
+.slideMenu .icons img {
+	padding: 10px 0;
+	cursor: pointer;
+	opacity:0.7;
+}
+.slideMenu .icons img:hover {
+	opacity:1;
+}
+#WRAPPER {
+	margin: 0 auto;
+	width: 900px;
+}
+#TOP {
+	margin: 0 auto;
+	width: 900px;
+	height: 60px;
+}
+#TOP h1 {
+	width: 210px;
+	height: 50px;
+	background-image: url(images/flycan.jpg);
+	text-indent: -9999px;
+	float: left;
+}
+#TOP ul {
+	float: right;
+	padding-top: 20px;
+}
+#TOP li {
+	float: left;
+}
+#TOP li a {
+	display: block;
+	width: 122px;
+	height: 40px;
+	background-image: url(images/white_btn.jpg);
+	color: #333333;
+	text-decoration: none;
+	text-align: center;
+	line-height: 35px;
+	font-size: 12px;
+	font-family: Arial;
+}
+#TOP li a:hover {
+	color: #0099CC;
+}
+#TOP li.PS a {
+	background-image: url(images/blue_btn.jpg);
+	color: #FFFFFF;
+}
+#HEADER {
+	margin: 0 auto;
+	clear: both;
+	width: 900px;
+	height: 180px;
+	background-image: url(images/banner.jpg);
+}
+#HEADER h2 {
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 12px;
+	text-indent: 12px;
+}
+#HEADER h3 {
+	color: #FFFFFF;
+	font-family: Arial;
+	font-size: 10px;
+	text-indent: 12px;
+}
+#CONTENT {
+	clear: both;
+	margin: 0 auto;
+	width: 900px;
+	background-image: url(images/content_bg.jpg);
+	background-repeat: no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+#CONTENT #BOX {
+	width: 750px;
+	margin: 0 auto;
+}
+#CONTENT #BOX p {
+	font-size: 13px;
+	line-height: 1.8;
+	letter-spacing: 1px;
+	padding: 8px 20px;
+	text-align: justify;
+}
+#FOOTER {
+	clear: both;
+	_height: 1%;
+	width: 100%;
+	height: 50px;
+	background-image: url(images/footer_bg.jpg);
+}
+#FOOTER h2 {
+	margin: 0 auto;
+	width: 900px;
+	height: 50px;
+	background-image: url(images/footer.jpg);
+}
+#FOOTER h2 a {
+	color: #FFFFFF;
+	font-size: 10px;
+	text-decoration: none;
+	font-family: Arial;
+	line-height: 30px;
+	letter-spacing: 2px;
+	padding-left: 20px;
+}

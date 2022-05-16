@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+body{
+	background-color:#eee;
+	margin-top:20px;
+}
+#bannerBox{
+	width:450px;
+	height:299px;
+	border:6px solid #fff;
+	border-radius:6px;
+	margin:0 auto;
+	position:relative;
+	box-shadow:0 2px 8px 1px rgba(0,0,0,0.35);
+}
+#bannerBox img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+#bannerBox #bannerPrev, #bannerBox #bannerNext{
+	cursor:pointer;
+	top:120px;
+}
+#bannerBox #bannerNext{
+	left:425px;
+}
+#bannerMenu{
+	text-align:center;
+	width:100%;
+	display:block;
+	position:absolute;
+	bottom: 0;
+}
+#bannerMenu li{
+	width:20px;
+	height:20px;
+	vertical-align:top;
+	display:inline-block;
+	background-color:transparent;
+	border:3px solid #fff;
+	border-radius:50%;
+	cursor:pointer;
+	margin:8px 5px;
+}
+#bannerMenu li.now{
+	background-color:#fff;
+}

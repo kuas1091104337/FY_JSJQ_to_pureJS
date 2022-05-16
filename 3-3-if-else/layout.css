@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	text-align:center;
+	background-color:#F5F5F5;
+	margin-top:20px;
+}
+
+#menu{
+	display:inline-block;
+	text-align:center;
+	margin:0 auto;
+	overflow:auto;
+	list-style:none;
+}
+
+#menu li{
+	margin:10px 5px;
+	display:inline-block;
+	float:left;
+	width:25px;
+	height:10px;
+	cursor:pointer;
+	background-color:#000;
+}

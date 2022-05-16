@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("reset.css");
+body {
+	background-color:#ADADAD;
+}
+#HEADER {
+	margin:0 auto;
+	width:900px;
+	height:131px;
+	background-image:url(images/top.jpg);
+}
+#WRAPPER {
+	margin:0 auto;
+	width:880px;
+	padding:0 10px;
+	background-image:url(images/center.jpg);
+	overflow:auto;
+}
+#CONTENT {
+	_height:1%;
+}
+#CONTENT p{
+	font-size:13px;
+	line-height:1.8;
+	padding:10px 20px;
+}
+
+#CONTENT .small {
+	width:770px; margin:10px auto; position:relative;
+}
+
+#CONTENT .banner{
+	width:765px;  margin:10px auto; position:relative;
+}
+#CONTENT .banner img{ position:absolute; left:0; top:0; display:none;}
+
+#CONTENT .banner img#PP1{ display:block;}
+
+#CONTENT #SHOWSHOW{
+	width:765px; margin:10px auto;
+}
+
+#FOOTER {
+	clear:both;
+	_height:1%;
+	margin:0 auto;
+	width:900px;
+	height:45px;
+	background-image:url(images/down.jpg);
+}
+
+table#MYTB td{ font-size:12px; padding:10px;}
+
+.EEE{ background-color:#EEE;}
+.AAA{ background-color:#ECF5FF;}

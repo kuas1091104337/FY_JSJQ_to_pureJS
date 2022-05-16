@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import url("reset.css");
+/* CSS Document */
+
+#MENU {
+	width: 1000px;
+	height: 260px;
+	margin: 0 auto;
+}
+#MENU ul {
+	width: 990px;
+	height: 160px;
+	margin: 0 auto;
+	position:relative;
+	overflow: hidden;
+}
+#MENU li {
+	float: left;
+	margin-right: 5px;
+	display: block;
+	width: 160px;
+	height: 160px;
+	position:relative;
+	top:100px;
+}
+#MENU li a {
+	display: block;
+	width: 160px;
+	height: 160px;
+	text-indent: -9999px;
+}
+#MENU li.css a {
+	background-image: url(images/bt_css.gif);
+}
+#MENU li.dreamweaver a {
+	background-image: url(images/bt_dreamweaver.gif);
+}
+#MENU li.flash a {
+	background-image: url(images/bt_flash_adv.gif);
+}
+#MENU li.game a {
+	background-image: url(images/bt_flashgame.gif);
+}
+#MENU li.illustrator a {
+	background-image: url(images/bt_illu.gif);
+}
+#MENU li.photoshop a {
+	background-image: url(images/bt_photoshop2.gif);
+}
+
+#MENU h1 {
+	width: 1000px;
+	height: 100px;
+	background-image: url(images/bg.jpg);
+	text-indent: -9999px;
+}

@@ -1,0 +1,105 @@
+
+@import url("reset.css");
+
+body{
+	background-color:#DDD;
+	font-family:Arial;
+}
+#BANNER {
+	width: 550px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 15px;
+	border: 1px solid #666;
+	background-color:#FFF;
+	box-shadow:1px 5px 8px #999;
+}
+#AA{background:hsl(0,50%,50%);}
+#BB{background:hsl(40,50%,50%);}
+#CC{background:hsl(80,50%,50%);}
+#DD{background:hsl(120,50%,50%);}
+#EE{background:hsl(160,50%,50%);}
+#FF{background:hsl(200,50%,50%);}
+#GG{background:hsl(240,50%,50%);}
+#HH{background:hsl(260,50%,50%);}
+#WRAPPER {
+	width: 550px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#WRAPPER ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+#WRAPPER li {
+	position:absolute;
+	top:300px;
+	font-size:150px;
+	width: 550px;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+}
+#WRAPPER li.NOW {
+	top:0;	
+	box-shadow:0 0 50px 5px rgba(0,0,0,0.5) inset;
+}
+#NUMBER {
+	position:relative;
+	width: 550px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#NUMBER ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+#NUMBER li {
+	position:relative;
+	cursor: pointer;
+	float: left;
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-family: Verdana, Geneva, sans-serif;
+	/*text-indent:-9999px;*/
+	white-space:nowrap;
+	line-height:40px; 
+	text-align: center;
+	border: 1px solid #777;
+	margin-right: 5px;
+	box-shadow:1px 5px 8px #999;
+}
+#NUMBER li div{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+}
+#NUMBER li.NOW{
+	color:#fff;
+}
+#NUMBER li.NOW div{
+	background-color:#099;
+}
+#blue {
+	position:absolute;
+	width: 40px;
+	height: 40px;
+}
+#blue span{
+	top:0;
+	left:
+	width: 100%;
+	height: 100%;
+	background-color: blue;
+}

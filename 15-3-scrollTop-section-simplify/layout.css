@@ -1,0 +1,55 @@
+
+body{ background-color:#BBB; margin:0; padding-top:50px;}
+
+#MENU{
+	width:100%;
+	height:50px;
+	background-color:#000;
+	position:fixed;
+	margin:0 auto;
+	top:0;
+	text-align:center;
+	box-shadow:1px 6px 10px #666666;
+}
+	
+#MENU a{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;
+	color:#FFF;
+	text-decoration:none;
+	line-height:50px;
+}
+
+#MENU a:hover{
+	color:#0EE;
+}	
+
+h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:300px;
+	margin:0;
+	text-align:center;
+	padding-top:180px;
+}
+
+#AAA{
+	width:100%;
+	height:1000px;
+	background-color:#9CF;
+	
+}
+#BBB{
+	width:100%;
+	height:1000px;
+	background-color:#9C9;
+}
+#CCC{
+	width:100%;
+	height:1000px;
+	background-color:#FF6;
+}
+#DDD{
+	width:100%;
+	height:1000px;
+	background-color:#F9F;
+}

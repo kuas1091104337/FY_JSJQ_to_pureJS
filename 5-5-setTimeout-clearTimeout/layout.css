@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	text-align:center;
+	background-color:#F5F5F5;
+	margin-top:20px;
+}
+
+#myPic{
+	position:relative;
+	width:450px;
+	height:299px;
+	margin:0 auto;	
+}
+
+#myPic img{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#myPic #switch{
+	cursor:pointer;
+	top:255px;
+	left:145px;
+}

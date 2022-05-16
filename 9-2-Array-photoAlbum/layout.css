@@ -1,0 +1,31 @@
+body {
+	background-color: #E4E4E4;
+	padding: 20px;
+}
+#BOX {
+	width: 900px;
+	margin: 0 auto;
+	border: 1px solid #999;
+	position: relative;
+	padding: 20px;
+	background-color: #FFF;
+	text-align:center;
+	box-shadow:1px 5px 10px #666666;
+}
+#BOX img {
+}
+#BOX #TITLE {
+	width: 940px;
+	height: 150px;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 460px;
+	left: 0;
+	display: none;
+
+	font-size: 120px;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 150px;
+	text-align:center;
+	color: #FFF;
+}
