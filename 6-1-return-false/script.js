@@ -43,6 +43,6 @@ window.onload=function(){
 	}
 	function colorChange(){
 		var colorNumber = this.id.substr(-1);
-		document.getElementById("CUP").src="images/cup"+colorNumber+".jpg";
+		document.getElementById("CUP").src="../images/cup"+colorNumber+".jpg";
 	}
 }

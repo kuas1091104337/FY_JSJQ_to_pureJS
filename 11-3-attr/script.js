@@ -1,3 +1,14 @@
+
+window.onload=function(){
+	var smallImgAmount = document.querySelectorAll("#SMALL img");
+	document.querySelectorAll('#SMALL img').forEach((el) => {
+		el.addEventListener('click',bnChange);
+	});
+	function bnChange(e){
+		let bnNum = e.target.id.substr(-1);
+		document.getElementById('BIG').src='../images/dog'+bnNum+'.jpg';
+	}
+}
 // $(function(){
 // 	var N = 0;
 // 	$("#SMALL > img").click(function(){
@@ -13,19 +24,6 @@
 // 		$("#BIG").attr("src","images/dog"+Number+".jpg");
 // 	});
 // });
-
-window.onload=function(){
-	var smallImgAmount = document.querySelectorAll("#SMALL img");
-	for (i=0; i<smallImgAmount.length; i++){
-		smallImgAmount[i].onclick = bannerChange;
-	}
-
-	function bannerChange(){
-		var bannerNumber = this.id.substr(-1);
-		console.log(this.index);
-		document.getElementById("BIG").src="images/dog"+bannerNumber+".jpg";
-	}
-}
 
 // $(function(){
 // 	$("#SMALL img").click(function(){

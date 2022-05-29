@@ -1,37 +1,29 @@
 // $(function(){
+// 	var num = 1;
+// 	$('#PP_'+num).fadeIn();
 // 	$(".small img").click(function(){
-// 		// var Number = this.id.substr(-1);
-// 		var Number = $(this).index()+1;
-// 		console.log(Number);
-// 		$(".banner img").not("#PP"+Number).fadeOut();
-// 		$("#PP"+Number).fadeIn();
-// 	});	
+// 		let bnNum = $(this).index() - 1;
+// 		$(".banner img").not("#PP_"+bnNum).fadeOut().eq(bnNum).fadeIn();
+// 	});		
 // });
 
-$(function(){
-	$("#PP_"+1).fadeIn();
-	$(".small img").click(function(){
-		var nowBannerNumber = $(this).index()+1;
-		var BannerNumber = $(this).index();
-		console.log(nowBannerNumber);
-		console.log(BannerNumber);
-		// $(".banner img").filter("#PP_"+nowBannerNumber).fadeIn().not("#PP_"+nowBannerNumber).fadeOut();
-		$(".banner img").not("#PP_"+nowBannerNumber).fadeOut().eq(BannerNumber).fadeIn()//.eq($(this).index()).fadeIn();
-	});		
-});
-
-// window.onload=function(){
-// 	document.querySelector(".banner img").style.display = "block";
-// 	// document.querySelectorAll(".banner img")[0].style.display = "block";
-// 	var bannerNumber = 1,
-// 		smallImgAmount = document.querySelectorAll(".small img");		
-// 	for (i=0; i<smallImgAmount.length; i++){
-// 		smallImgAmount[i].onclick = showBanner;
-// 	}
-// 	function showBanner(){
-// 		var nowBannerNumber = this.id.substr(this.id.indexOf("_")+1);
-// 		document.getElementById("PP_"+bannerNumber).style.display = "none";
-// 		document.getElementById("PP_"+nowBannerNumber).style.display = "block";
-// 		bannerNumber = nowBannerNumber;
-// 	}
-// }
+window.onload=function(){
+	function findIndex(el) {
+		if(!el) return -1;
+		let i = 1;
+		while(el = el.previousElementSibling) i++;
+		return i;
+	}
+	document.getElementById('PP_1').classList.add('show');
+	document.querySelectorAll('.small > img').forEach((el) => {
+		el.addEventListener('click',bnShow);
+	});
+	function bnShow(e){
+		console.log(findIndex(e.target));
+		// console.log(e.target);
+		document.querySelectorAll('.banner > img').forEach((el) => {
+			if(el.classList.contains('show')) el.classList.remove('show');
+		});
+		document.getElementById('PP_'+findIndex(e.target)).classList.add('show');
+	}
+}

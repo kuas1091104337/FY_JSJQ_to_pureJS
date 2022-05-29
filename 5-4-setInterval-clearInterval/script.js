@@ -1,27 +1,25 @@
 // setTimeout
 window.onload=function(){
-	var bannerNumber=1,
-		bannerGo=setTimeout(bannerNext,1500),
-		bannerSwitch=document.getElementById("switch");
-	function bannerNext(){
-		if(bannerNumber<11){
-			bannerNumber++;
-		}else{
-			bannerNumber=1;
-		};
-		document.getElementById("myImg").src="images/"+bannerNumber+".jpg";
-		bannerGo=setTimeout(bannerNext,1500);
-		// console.log(bannerGo);
+	var BNnum = 0,//宣告一個變數給照片用
+			time = 0,//宣告一個變數給計時器用
+			sec = 1000,
+			BNgo = setInterval(BNnext,sec),
+			$switch = document.getElementById("switch");
+	function BNnext(){
+		// BNnum<11 ? BNnum++ : BNnum = 0;
+		BNnum++;
+		BNnum = (BNnum+12)%12;
+		document.getElementById("myImg").src="../images/"+BNnum+".jpg";
 	}	
-	bannerSwitch.onclick=function(){
-		if(bannerGo!=0){
-			clearInterval(bannerGo);
-			bannerSwitch.src="images/play.jpg";
-			bannerGo=0;
-			// console.log(bannerGo);
+	$switch.onclick=function(){
+		if(BNgo!==0){
+			clearInterval(BNgo);
+			$switch.src='../images/play.jpg';
+			BNgo = 0;
+			// console.log(BNgo);
 		}else{
-			bannerSwitch.src="images/pause.jpg";
-			bannerGo=setTimeout(bannerNext,1500);
+			$switch.src='../images/pause.jpg';
+			BNgo = setInterval(BNnext,sec);
 		};
 	}
 }
@@ -29,14 +27,10 @@ window.onload=function(){
 // setInterval
 // window.onload=function(){
 // 	var bannerNumber=1,
-// 		bannerGo=setInterval(bannerNext,1500),
-// 		bannerSwitch=document.getElementById("switch");
+// 			bannerGo=setInterval(bannerNext,1500),
+// 			bannerSwitch=document.getElementById("switch");
 // 	function bannerNext(){
-// 		if(bannerNumber<11){
-// 			bannerNumber++;
-// 		}else{
-// 			bannerNumber=1;
-// 		};
+// 		if(bannerNumber<11){ bannerNumber++; }else{ bannerNumber=1; };
 // 		document.getElementById("myImg").src="images/"+bannerNumber+".jpg";
 // 		// console.log(bannerGo);
 // 	}	

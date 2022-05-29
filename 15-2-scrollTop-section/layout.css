@@ -1,26 +1,32 @@
 
-body{ background-color:#BBB; margin:0; padding-top:50px;}
-
+body{
+	background-color:#BBB;
+	margin:0;
+	padding-top:50px;
+}
 #MENU{
 	width:100%;
 	height:50px;
+	display: flex;
+	justify-content: center;
+	list-style: none;
 	background-color:#000;
 	position:fixed;
+	z-index: 1;
 	margin:0 auto;
+	padding: 0;
 	top:0;
 	text-align:center;
 	box-shadow:1px 6px 10px #666666;
 }
-	
-#MENU a{
+#MENU li{
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:20px;
 	color:#FFF;
 	text-decoration:none;
 	line-height:50px;
 }
-
-#MENU a:hover{
+#MENU li:hover{
 	color:#0EE;
 }	
 
@@ -30,26 +36,15 @@ h1{
 	margin:0;
 	text-align:center;
 	padding-top:180px;
+	transition: .3s ease;
 }
 
-#AAA{
+#AAA, #BBB, #CCC, #DDD{
 	width:100%;
 	height:1000px;
-	background-color:#9CF;
-	
+	position: relative;
 }
-#BBB{
-	width:100%;
-	height:1000px;
-	background-color:#9C9;
-}
-#CCC{
-	width:100%;
-	height:1000px;
-	background-color:#FF6;
-}
-#DDD{
-	width:100%;
-	height:1000px;
-	background-color:#F9F;
-}
+#AAA{ background-color:#9CF; }
+#BBB{ background-color:#9C9; }
+#CCC{ background-color:#FF6; }
+#DDD{ background-color:#F9F; }

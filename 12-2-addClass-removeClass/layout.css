@@ -1,10 +1,12 @@
-@charset "big5";
 .wrapper{ width:960px; margin:0 auto;}
+.box:hover {
+	background-image:url(../images/border2.jpg);
+}
 .box {
 	float:left;
 	width:320px;
 	height:200px;
-	background-image:url(images/border.jpg);
+	background-image:url(../images/border.jpg);
 	position:relative;
 }
 .box h3 {
@@ -30,7 +32,7 @@
 	font-size:12px;
 	line-height:18px;
 	letter-spacing:1px;
-	font-family:Arial, ²Ó©úÅé;
+	font-family:Arial, ï¿½Ó©ï¿½ï¿½ï¿½;
 }
 .box img {
 	position:absolute;
@@ -38,8 +40,8 @@
 	right:16px;
 }
 
-.AAA{ background-image:url(images/border.jpg); }
+.AAA{ background-image:url(../images/border.jpg); }
 
-.BBB{ background-image:url(images/border2.jpg);}
+.BBB{ background-image:url(../images/border2.jpg);}
 
-.CCC{ background-image:url(images/border3.jpg);}
+.CCC{ background-image:url(../images/border3.jpg);}

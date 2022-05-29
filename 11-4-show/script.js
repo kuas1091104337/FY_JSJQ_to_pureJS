@@ -11,23 +11,25 @@
 // });
 
 window.onload=function(){
-	var PP = document.getElementById("PP"),
-		liAmount = document.querySelectorAll("#BOX li");
-	PP.style.display = "block";
-	for (i=0; i<liAmount.length; i++){
-		liAmount[i].onclick = PPdisplay;
+	const $PP = document.getElementById("PP");
+	document.querySelectorAll("#BOX li").forEach((el) => {
+		el.addEventListener('click',imgChange);
+	});
+	function imgChange(e){
+		console.log(e.target.parentNode);
+		console.log(this.id);
+		switch(e.target.parentNode.id) {
+			case 'AAA' :
+				$PP.classList.add('show');
+				break;
+			case 'BBB' :
+				$PP.classList.remove('show');
+				break;
+			case 'CCC' :
+				$PP.classList.toggle('show');
+				break;
+		}
+		return false;
 	}
-	function PPdisplay(){
-		if(this.id == "AAA"){
-			PP.style.display = "block";
-		}else if(this.id == "BBB"){
-			PP.style.display = "none";
-		}else if(this.id == "CCC"){
-			if(PP.style.display == "block"){
-				PP.style.display = "none";
-			}else if(PP.style.display == "none"){
-				PP.style.display = "block";
-			};
-		};			
-	};
+	$PP.classList.add('show');
 }

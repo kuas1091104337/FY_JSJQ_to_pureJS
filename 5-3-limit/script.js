@@ -12,9 +12,8 @@ window.onload=function(){
 		document.getElementById("b"+bannerNumber).className="now";		
 	}
 	function bannerIMG(){
-		IMG.src="images/"+bannerNumber+".jpg";		
+		IMG.src="../images/"+bannerNumber+".jpg";		
 	}
-
 	bannerIMG();	
 	for (var i = 1; i <= 11; i++) {
 		document.getElementById("b"+i).onclick=bannerShow;
@@ -26,7 +25,6 @@ window.onload=function(){
 		this.className="now"
 		console.log(this);
 	}
-
 	document.getElementById("bannerNext").onclick=bannerNext;
 	function bannerNext(){
 		if(bannerNumber<11){
@@ -49,7 +47,6 @@ window.onload=function(){
 		forBi();
 		forBnow();
 	}
-	
 	BOX.onmouseover=function(){
 		clearInterval(bannerGo);
 	}

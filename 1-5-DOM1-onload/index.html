@@ -4,31 +4,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>飛肯設計</title>
 <script type="text/javascript">
+	var input = window.prompt("請輸入你的名字:");
+	window.alert("Hi,"+input);
 
+	if(window.confirm("確定還是取消!?")){
+		window.alert("確定");
+	}else{
+		window.alert("取消");
+	}
 	// function AAA(){
 	// 	alert("提示訊息");
 	// }
 	// window.onload = AAA;
-
-	
-
 	function AAA(){
 		alert("提示訊息");
 	};
-
 	window.onload = AAA;
-
 	function AMOS2(){
 		alert("提示訊息AMOS2");
 	}
 	window.onload=AMOS2;
-	
+	window.addEventListener("load", AAA);
+	window.onload=function(){
+		alert("飛肯設計");
+	}
 </script>
 </head>
 <body>
 <p>&nbsp;</p>
+<p><a href="#" onclick="AMOS2(); return false;">這是文字</a></p>
 <p align="center">Javascript & Jquery 程式設計入門 by Alex.</p>
-<p align="center"><img src="flycan.jpg" width="433" height="359"></p>
+<p align="center"><img src="../images/flycan.jpg" width="433" height="359" onclick="AAA()"></p>
 <p>&nbsp;</p>
 </body>
 </html>

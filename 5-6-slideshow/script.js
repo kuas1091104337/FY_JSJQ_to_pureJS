@@ -12,7 +12,7 @@ window.onload=function(){
 		}else{
 			bannerNumber=1
 		};
-		bannerImg.src="images/"+bannerNumber+".jpg";
+		bannerImg.src="../images/"+bannerNumber+".jpg";
 	}
 	document.getElementById("prev").onclick=function(){
 		if(bannerNumber>1){
@@ -20,17 +20,17 @@ window.onload=function(){
 		}else{
 			bannerNumber=11
 		};
-		bannerImg.src="images/"+bannerNumber+".jpg";	
+		bannerImg.src="../images/"+bannerNumber+".jpg";	
 	}
 	bannerSwitch.onclick=function(){
 		if(bannerGo!=0){
 			alert("stop");
 			clearInterval(bannerGo);
-			bannerSwitch.src="images/play.jpg";
+			bannerSwitch.src="../images/play.jpg";
 			bannerGo=0;
 		}else{
 			alert("go");
-			bannerSwitch.src="images/pause.jpg";
+			bannerSwitch.src="../images/pause.jpg";
 			bannerGo=setInterval(bannerNext,2500);
 		};
 	}

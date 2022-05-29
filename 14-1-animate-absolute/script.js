@@ -15,15 +15,20 @@
 // });
 
 window.onload=function(){
-	var moveNumber = 0,
-		alex = document.getElementById("alex");
-		alex.style.left = moveNumber+"px";
-	document.getElementById("RIGHT").onclick = function(){
-		moveNumber+=100;
-		alex.style.left = moveNumber+"px";
-	};
-	document.getElementById("LEFT").onclick = function(){
-		moveNumber-=100;
-		alex.style.left = moveNumber+"px";
-	};	
+	const $alex = document.getElementById('alex');
+	let moveNum = 0;
+		// alex.style.left = moveNumber+"px";
+	document.getElementById("RIGHT").addEventListener('click',() => {
+		console.log('r');
+		moveNum+=100
+		alexGo(moveNum)
+	});
+	document.getElementById("LEFT").addEventListener('click',() => {
+		console.log('l');
+		moveNum-=100;
+		alexGo(moveNum)
+	});
+	function alexGo(moveNum){
+		Velocity($alex,{left:moveNum+'px'},{duration:400});
+	}
 }

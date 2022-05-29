@@ -9,13 +9,13 @@ body {
 	margin:0 auto;
 	width:900px;
 	height:131px;
-	background-image:url(images/top.jpg);
+	background-image:url(../images/top.jpg);
 }
 #WRAPPER {
 	margin:0 auto;
 	width:880px;
 	padding:0 10px;
-	background-image:url(images/center.jpg);
+	background-image:url(../images/center.jpg);
 	overflow:auto;
 }
 #CONTENT {
@@ -48,7 +48,7 @@ body {
 	margin:0 auto;
 	width:900px;
 	height:45px;
-	background-image:url(images/down.jpg);
+	background-image:url(../images/down.jpg);
 }
 
 table#MYTB td{ font-size:12px; padding:10px;}

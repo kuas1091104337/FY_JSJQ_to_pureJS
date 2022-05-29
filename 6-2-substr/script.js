@@ -9,7 +9,7 @@ window.onload=function(){
 	function CHANGE(){
 		var N = this.id.substr(5);
 		substr截取字串
-		document.getElementById("CUP").src = "images/cup"+N+".jpg";
+		document.getElementById("CUP").src = "../images/cup"+N+".jpg";
 		return false;
 	}
 }

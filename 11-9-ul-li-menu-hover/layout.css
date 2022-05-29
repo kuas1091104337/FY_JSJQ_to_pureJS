@@ -27,69 +27,66 @@ body {
 	color:#333;
 	padding-bottom:15px;
 }
-ul {
-	list-style-type: none;
-	padding: 0;
+ul{list-style-type: none;}
+li{width: 140px;}
+li > a {
+	color: #333;
+	font-size: 14px;
+	font-weight:bold;
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
 	display: block;
+	transition: color .4s;
+}
+.nav{
 	width: 750px;
 	height: 40px;
-	background-image: url(images/menu_bg.gif);
+	background-image: url(../images/menu_bg.gif);
+	padding: 0 0 0 150px;
 	margin: 0 auto;
-	padding-left: 150px;
 }
-li {
-	display: block;
-	width: 140px;
+.nav > li{
 	float: left;
 	position: relative;
 }
-li a {
-	display: block;
-	width: 140px;
-	height: 40px;
-	background-image: url(images/btn.gif);
-	text-align: center;
-	line-height: 40px;
-	font-size: 13px;
-	letter-spacing: 1px;
-	color: #333;
+.nav > li > a{
 	font-family: Arial, Geneva, sans-serif;
-	font-weight:bold;
-	text-decoration: none;
+	line-height: 40px;
+	height: 100%;
+	background-image: url(../images/btn.gif);
+	background-position:0 0;
 }
-li a:hover {
+.nav > li:hover > a {
 	color:#099;
-	background-position: left bottom;
+	background-position: 0 100%;
+	transition:background-position .2s .2s;
 }
-ul ul {
-	position: absolute;
-	left: 0;
-	top: 40px;
-	width: 140px;
+.nav > li:hover > ul{
 	height: 180px;
-	background-image: url(images/box.jpg);
-	padding: 0;
 	padding-top: 20px;
-	display: none;
+	transition: height .4s .2s ease-in-out, padding-top .4s .2s ease-in-out;
 }
-li li {
-	display: block;
-	width: 140px;
+.nav ul {
+	width: 100%;
+	height: 0;
+	background-image: url(../images/box.jpg);
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	transition: height .4s ease-in-out, padding-top .4s ease-in-out;
 }
-li li a {
-	display: block;
+li li > a {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 30px;
 	width: 120px;
 	height: 30px;
-	background: none;
-	color: #333;
-	line-height: 30px;
-	font-family: Arial, Helvetica, sans-serif;
 	border-bottom: 1px dotted #CCC;
 	margin: 0 auto;
 }
-li li a:hover {
-	color: #F00;
-}
+li li > a:hover { color: #F00; }
 h3{
 	color:#666;
 	font-size:15px;
