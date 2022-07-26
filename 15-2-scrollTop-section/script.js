@@ -27,8 +27,11 @@
 // 	});
 // });
 window.onload = function () {
+  let startNum = 1;
   const scrollTime = 600,
-    menuH = document.getElementById("MENU").offsetHeight;
+        $menuH = document.getElementById("MENU").offsetHeight;
+  document.querySelector('#MENU > li:nth-of-type(' + startNum + ')').classList.add('active');
+  //增加className，如className已存在，則不新增
   document.querySelectorAll("#MENU > li").forEach((el) => {
     el.addEventListener("click", menuGo);
   });
@@ -40,11 +43,15 @@ window.onload = function () {
     return i;
   }
   function menuGo(e) {
-    console.log(e.target);
-    // console.log(e.target.className); console.log(e.target.id);
+    // console.log(e.target);
     let num = findIndex(e), target;
-    target = document.querySelector('body>div:nth-of-type(' + num + ')').offsetTop - menuH;
+    console.log(num);
+    document.querySelector('#MENU > li:nth-of-type(' + startNum + ')').classList.remove('active');
+    e.target.classList.add('active');
+    //增加className，如className已存在，則不新增
+    target = document.querySelector('body>div:nth-of-type(' + num + ')').offsetTop - $menuH;
     scrollTopAnimateLinear(target, scrollTime);
+    startNum = num;
   }
   function scrollTopAnimateLinear(target, duration) {
     // 如果已經在頂部，則取消

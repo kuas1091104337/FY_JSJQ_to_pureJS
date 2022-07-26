@@ -26,9 +26,8 @@ body{
 	text-decoration:none;
 	line-height:50px;
 }
-#MENU li:hover{
-	color:#0EE;
-}	
+#MENU > li:hover{ color:#0EE; }	
+#MENU > .active{ color:#0EE; }	
 
 h1{
 	font-family:Verdana, Geneva, sans-serif;
