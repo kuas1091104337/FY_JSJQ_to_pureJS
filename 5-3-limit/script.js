@@ -1,8 +1,8 @@
 window.onload=function(){
-	var bannerGo=setInterval(bannerNext,2500),
+	var bannerGo = setInterval(bannerNext,2500),
 		IMG = document.getElementById("bannerImg"),
 		BOX = document.getElementById("bannerBox"),
-		bannerNumber = 1;
+		bannerNumber = 1; 
 	function forBi(){
 		for (var i = 1; i <= 11; i++) {
 			document.getElementById("b"+i).className="";

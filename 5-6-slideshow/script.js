@@ -3,7 +3,7 @@ window.onload=function(){
 		bannerImg=document.getElementById("myImg"),
 		bannerSwitch=document.getElementById("switch"),
 		bannerPic=document.getElementById("myPic"),
-		bannerGo=setInterval(bannerNext,2500);
+		bannerGo=setInterval(bannerNext,2500); 
 	bannerImg.src="images/"+bannerNumber+".jpg";
 	document.getElementById("next").onclick=bannerNext;
 	function bannerNext(){
